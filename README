@@ -1,0 +1,22 @@
+John Conway's Life simulation, cellular automaton in color resembling 
+one for the Cromemco Dazzler.  Births are shown in green, survival to the 
+next generation in blue and deaths in red.  An editor is included with 
+interesting preset shapes and random probabilities.  Statistics of 
+heat, temperature, population and changes are provided in the console
+window.  The program wants to be launched from a GUI console window, so
+SDL can open a window to show the culture.  
+
+Toggle between run and edit modes by hitting R (for Run) and E (for Edit).  
+In Edit mode, use arrow keys to navigate, Insert and Delete keys to add 
+and remove living cells.  Other letters insert shapes, C clears the grid.
+Digit keys randomly sprinkle live cells around the grid with the probability 
+indicated on the console window.  In Edit mode, the cursor is shown in
+Yellow.  
+
+Hit Q at any time, click on the X button at the top of the window to 
+close it, or Ctrl C on the console window to quit and return to the command
+line.  
+
+SDL needs to be installed to compile with command
+gcc L.c `sdl-config --cflags --libs `
+
